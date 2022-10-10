@@ -1,0 +1,42 @@
+{
+  "name": "CommanderJS Nested Template",
+  "version": "1.0.0",
+  "description": "CommanderJS Nested Template",
+  "main": "index.js",
+  "author": "Onur Ayçiçek <onur.m.aycicek@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kozmonos/commander2documentation.git"
+  },
+  "bin": {
+    "kozmonos": "index.js"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@app": "./src",
+    "@config": "./config",
+    "@utils": "./utils",
+    "@templates": "./templates",
+    "@cache": "./cache"
+  },
+  "scripts": {
+    "create-project": "node ./tools/create-project.js",
+    "create-command": "node ./tools/create-command.js",
+    "create-sub-command": "node ./tools/create-sub-command.js",
+    "create-documentation": "node ./tools/create-documentation.js"
+  },
+  "dependencies": {
+    "circular-json": "^0.5.9",
+    "cli-color": "^2.0.3",
+    "commander": "^9.4.1",
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3",
+    "inquirer": "^8.2.4",
+    "module-alias": "^2.2.2",
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "@kozmonos/commander2documentation": "^0.1.1"
+  }
+}
