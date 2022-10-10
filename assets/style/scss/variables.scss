@@ -1,0 +1,15 @@
+@import "./colors.scss";
+
+$dark: #0e0e0e;
+$light: #ffffff;
+
+$theme: (
+	"dark": $dark,
+	"light": $light,
+	"dark-shadow": 0 1px 4px 0 rgb(0 0 0 / 80%),
+	"light-shadow": 0 1px 4px 0 rgb(0 0 0 / 10%),
+	"dark-text":#e1e1e1,
+	"light-text": #3e3e3e,
+	"dark-background":darken(($dark), 5%),
+	"light-background": darken(($light), 1.15%),
+);

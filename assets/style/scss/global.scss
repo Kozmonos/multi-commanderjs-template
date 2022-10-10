@@ -1,0 +1,81 @@
+@use "sass:map";
+@import "./variables.scss";
+
+@each $color in ("dark","light") {
+	
+	.#{$color}-mode body{
+		background-color: map.get($theme, #{$color});
+	}	
+
+	.#{$color}-mode header{
+			background-color: rgba(map.get($theme, #{$color}), 0.8);
+	}
+
+
+	.#{$color}-mode .theme-shadow{
+		box-shadow: map.get($theme, #{$color}+"-shadow");
+	}
+
+
+	.#{$color}-mode .theme-background{
+		background-color: map.get($theme, #{$color});
+	}
+
+	.#{$color}-mode .theme-text,.#{$color}-mode body{
+		color: map.get($theme, #{$color}+"-text");
+	}
+
+	.#{$color}-mode .hljs, .#{$color}-mode .code{
+		background: map.get($theme, #{$color}+"-background") !important;
+		color: map.get($theme, #{$color}+"-text") !important;
+	}
+
+	.#{$color}-mode thead th,.#{$color}-mode .vgt-table td{
+		background: map.get($theme, #{$color}+"-background") !important;
+	}
+
+	.#{$color}-mode .vgt-table{
+		border: 1px solid;
+    border-image-source: linear-gradient(352deg,#f25b38,transparent,transparent,transparent,#f25c39);
+    border-image-slice: 1;
+	}
+
+	.#{$color}-mode  pre.code::-webkit-scrollbar-track{ 
+		background-color: map.get($theme, #{$color});
+	}
+
+	.#{$color}-mode .nav{
+		border-image: linear-gradient(to bottom, $base-color, map.get($theme, #{$color})) 1 10%;
+	}
+	.#{$color}-mode hr.doc{
+		border-image: linear-gradient(to right, map.get($theme, #{$color}), $base-color, map.get($theme, #{$color})) 1 0%;
+		}
+		.#{$color}-mode nav{
+			border-image: linear-gradient(to bottom,  $base-color, map.get($theme, #{$color})) 1 10%;
+			}
+
+	.#{$color}-mode button.mobile-wrapper span{
+		background: map.get($theme, #{$color}+"-text");
+	}
+
+	@media only screen and (max-width: 768px){
+		.#{$color}-mode header.active-nav {
+			background-color: map.get($theme, #{$color});
+		}
+	}
+
+
+}
+
+.anchor{
+	fill:$base-color;
+}
+
+
+.dark-mode  .theme-changer{
+	background-color: darken(($dark), 5%) !important;
+}
+.light-mode  .theme-changer{
+	background-color: darken(($light), 10%) !important;
+}
+

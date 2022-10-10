@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	font-family: Inter,sans-serif;
+}
+
+:root{
+	--bs-nav-link-font-size:1.5rem;
+	--grey:#a0a0a0;
+}
+
+
+h1,h2,h3,h4,h5,h6,h7,h8{
+	text-transform: capitalize;
+}
+
+.documentation-title{
+	cursor: pointer;
+	font-size: 1.5rem;
+	font-weight: 600;
+	width: fit-content;
+}
+
+p{
+	line-height: 1.625;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.anchor{
+	display: none;
+	float: left;
+	margin-left: -0.87em;
+	padding-right: 0.23em;
+	margin-top: 0.125em;
+}
+
+.documentation-title:hover .anchor{
+	display: inline;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f04b2a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #db3919;
+}

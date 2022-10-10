@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/documentation/cli/documentation", {data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/documentation/test2/custom-sub", {data:[{}],fetch:{},mutations:[]});
