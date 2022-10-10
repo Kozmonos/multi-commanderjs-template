@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - run: npm run i
+      - run: npm i
       - run: npm run create-documentation
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
